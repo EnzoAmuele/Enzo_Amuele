@@ -152,7 +152,7 @@
         background: #5029bc;
       }
 
-      @media (max-width: 1231px) {
+      @media (max-width: 950px) {
         .container {
           width: 90%;
           padding: 30px 40px 40px 35px;
@@ -163,7 +163,7 @@
         }
       }
 
-      @media (max-width: 1231px) {
+      @media (max-width: 820px) {
         .container {
           margin: 40px 0;
           height: 100%;
@@ -238,6 +238,7 @@
       }
 
       .content {
+        margin-left: 270px;
         padding: 40px;
         background-color: #fff;
         border-radius: 10px;
@@ -417,6 +418,15 @@
     </button>
 
     <aside class="sidebar">
+      <button
+        class="close-button"
+        onclick="hideSidebar()"
+        aria-label="Close sidebar"
+        type="button"
+        data-close
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
       <div class="picture-resume">
         <img
           src="https://zone.my.na/theme_zonemy/images/team/enzo.jpg?v=20"
@@ -550,7 +560,7 @@
         </p>
       </section>
 
-      <section class="container" id="projects">
+      <section id="projects">
         <h2>Projects</h2>
         <div class="card-deck">
           <div class="card">
@@ -583,7 +593,7 @@
         </div>
       </section>
 
-      <section class="container" id="skills">
+      <section id="skills">
         <h2>Language Proficiency</h2>
         <div class="mb-3">
           <span>ENGLISH</span>
@@ -647,7 +657,7 @@
         </div>
       </section>
 
-      <section class="container" id="services">
+      <section id="services">
         <h2>Services</h2>
         <ul>
           <li>Custom Software Development</li>
