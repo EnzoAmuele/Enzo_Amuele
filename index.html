@@ -727,9 +727,7 @@ Scheduling of meetings, correspondence and note-<hr>
             <div class="right-side">
               <div class="topic-text">Send us a message</div>
               <p>
-                If you have any work from me or any types of queries related to
-                my tutorial, you can send me a message from here. It's my
-                pleasure to help you.
+                If you have any question, please do not hesitate to contact me
               </p>
               <button class="btn-primary" onclick="location.href='https://www.facebook.com/dkb.amuele/'">Click to check out my Facebook Page</button>
             </div>
@@ -750,76 +748,7 @@ Scheduling of meetings, correspondence and note-<hr>
         content.classList.toggle("content-expanded");
       }
 
-      const reviews = [
-        {
-          id: 1,
-          name: "sara jones",
-          job: "ux designer",
-          img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?",
-        },
-        {
-          id: 2,
-          name: "anna johnson",
-          job: "web designer",
-          img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-2_rfzshl.jpg",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?",
-        },
-        {
-          id: 3,
-          name: "peter jones",
-          job: "intern",
-          img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-3_rfzshl.jpg",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?",
-        },
-        {
-          id: 4,
-          name: "bill anderson",
-          job: "the boss",
-          img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-4_rfzshl.jpg",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?",
-        },
-      ];
-
-      const img = document.getElementById("person-img");
-      const author = document.getElementById("author");
-      const job = document.getElementById("job");
-      const info = document.getElementById("info");
-
-      const prevBtn = document.querySelector(".prev-btn");
-      const nextBtn = document.querySelector(".next-btn");
-
-      let currentItem = 0;
-
-      window.addEventListener("DOMContentLoaded", function () {
-        showPerson(currentItem);
-      });
-
-      function showPerson(person) {
-        const item = reviews[person];
-        img.src = item.img;
-        author.textContent = item.name;
-        job.textContent = item.job;
-        info.textContent = item.text;
-      }
-
-      nextBtn.addEventListener("click", function () {
-        currentItem++;
-        if (currentItem > reviews.length - 1) {
-          currentItem = 0;
-        }
-        showPerson(currentItem);
-      });
-
-      prevBtn.addEventListener("click", function () {
-        currentItem--;
-        if (currentItem < 0) {
-          currentItem = reviews.length - 1;
-        }
-        showPerson(currentItem);
-      });
     </script>
-    <!-- JS Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
