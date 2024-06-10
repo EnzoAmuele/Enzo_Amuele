@@ -25,7 +25,24 @@
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
       }
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
 
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
       body {
         min-height: 100vh;
         width: 100%;
@@ -49,27 +66,7 @@
         justify-content: space-between;
       }
 
-      .container .content .left-side {
-        width: 25%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 15px;
-        position: relative;
-      }
 
-      .container .content .left-side::before {
-        content: "";
-        position: absolute;
-        height: 70%;
-        width: 2px;
-        right: -15px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #afafb6;
-      }
 
       .container .content .left-side .details {
         margin: 14px;
@@ -418,15 +415,6 @@
     </button>
 
     <aside class="sidebar">
-      <button
-        class="close-button"
-        onclick="hideSidebar()"
-        aria-label="Close sidebar"
-        type="button"
-        data-close
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>
       <div class="picture-resume">
         <img
           src="https://zone.my.na/theme_zonemy/images/team/enzo.jpg?v=20"
@@ -552,41 +540,58 @@
     <!-- Main Content -->
     <main class="content">
       <section id="home">
-        <h1>ABOUT ME</h1>
+        <h1>Summary</h1>
         <p>
-          Dynamic software engineer with 10 years of experience in full-stack
-          development. Passionate about creating efficient and scalable
-          applications.
+        I am a young, organised, energetic, reliable, honest and dedicated team worker who is self-motivated, hard-working, vibrant and ambitious. I bring a strong work ethic and desire tosucceed, a motivation to cooperate with others and a need to produce quality work. 
         </p>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
+      <section style="text-centred" id="projects">
+        <h2>WORK EXPERIENCE</h2>
         <div class="card-deck">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Project Alpha</h5>
+              <strong>
+              <h5 class="card-title">2017 - 2019 (Personal Assistant)</h5></strong>
+              <h4>Nande Signs and Paintings</h4><hr>
               <p class="card-text">
-                Developed a web-based CRM system that increased client retention
-                by 20%.
+                Manage and organise paperwork, invoices, and other administrative tasks.<hr>
+Handle phone calls, emails, and inquiries with professionalism and courtesy.<hr>
+Filing of documents and bookkeeping<hr>
+Paying of accounts and making sure all construction work is done on time<hr>
+Scheduling of meetings, correspondence and note-<hr>
               </p>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Project Beta</h5>
+              <h5 class="card-title">2019 - 2020 (Part Time Student Assistant)
+                </h5>
+<h4>University of Namibia - Department of Education l Windhoek</h4>          
+            
               <p class="card-text">
-                Led a team to create a mobile app that streamlined internal
-                communication, reducing response times by 35%.
+                Assist the lecturer in organising course materials, grading, and maintaining accuraterecords.<hr>
+                Handle correspondence, including emails and inquiries from students.<hr>
               </p>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Project Gamma</h5>
+              <h5 class="card-title">2020 - August 2023 Media (Practitioner)</h5>
+              <h4>Namibia Media Holdings l Windhoek</h4>
               <p class="card-text">
-                Implemented a secure e-commerce platform that handled over $1M
-                in transactions in its first year.
+                Write clear, compelling, and objective news stories for print, online, or broadcastplatforms.<hr>
+                Conduct interviews with relevant individuals, experts, and witnesses to gather first-hand information.<hr>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">September 2023 - to date (Head of My Zone and Youth Development)</h5>
+              <h4>Namibia Media Holdings l Windhoek</h4>
+              <p class="card-text">
+                Create youth-focused programs and initiatives aligned with company goals and values.<hr>
+                Cultivate relationships with youth organizations, schools, and the community forcollaboration and support.<hr>
               </p>
             </div>
           </div>
@@ -601,12 +606,12 @@
             <div
               class="progress-bar progress-bar-html"
               role="progressbar"
-              style="width: 90%"
-              aria-valuenow="90"
+              style="width: 100%"
+              aria-valuenow="100"
               aria-valuemin="0"
               aria-valuemax="100"
             >
-              90%
+              100%
             </div>
           </div>
         </div>
@@ -616,12 +621,12 @@
             <div
               class="progress-bar progress-bar-css"
               role="progressbar"
-              style="width: 85%"
-              aria-valuenow="85"
+              style="width: 65%"
+              aria-valuenow="65"
               aria-valuemin="0"
               aria-valuemax="100"
             >
-              85%
+              65%
             </div>
           </div>
         </div>
@@ -658,139 +663,45 @@
       </section>
 
       <section id="services">
-        <h2>Services</h2>
+        <h2>Qualifications</h2>
         <ul>
-          <li>Custom Software Development</li>
           <div class="card-group">
             <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Alison Online School</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Diploma in Journalism, Media Studies
                 </p>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <div class="card-body">
+                <h5 class="card-title">University of Namibia</h5>
                 <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
+                  Diploma in Lifelong Learning & CommunityEducation (NQF 6)
                 </p>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
+<div class="card">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </p>
-              </div>
+              <h5 class="card-title">Renmin University
+                of China</h5>
+              <p class="card-text">
+                Certificate in Journalism & Communications
+              </p>
             </div>
+          </div>            <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Namibia University of Science and Technology</h5>
+            <p class="card-text">
+              Bachelors of Communications (NQF 7)
+            </p>
           </div>
-          <li>Web Application Development</li>
-          <li>Mobile App Development</li>
-          <li>Cloud Solutions</li>
-          <li>Technical Consulting</li>
+        </div>
+          </div>
         </ul>
       </section>
 
-      <!-- <section id="testimonials">
-        <h2 style="text-align: center;">Testimonials</h2>
-        <p>
-          Have successfully delivered projects for various testimonials
-          including:
-        </p>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </section> -->
-      <section class="container">
-        <div class="title">
-          <h2 style="text-align: center">TESIMONIALS</h2>
-          <div class="underline"></div>
-        </div>
-        <article class="review">
-          <div class="img-container">
-            <img
-              src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg"
-              alt="person"
-              id="person-img"
-            />
-          </div>
-          <h4 id="author">sara jones</h4>
-          <p id="job">ux designer</p>
-          <p id="info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            asperiores debitis incidunt, eius earum ipsam cupiditate libero?
-            Iste, doloremque nihil?
-          </p>
-          <div class="button-container">
-            <button class="prev-btn btn">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="next-btn btn">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </article>
-      </section>
       <section id="contact">
         <div class="container">
           <div class="content">
@@ -798,20 +709,19 @@
               <div class="address details">
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="topic">Address</div>
-                <div class="text-one">Surkhet, NP12</div>
-                <div class="text-two">Birendranagar 06</div>
+                <div class="text-one">Windhoek, Namibia</div>
               </div>
               <div class="phone details">
                 <i class="fas fa-phone-alt"></i>
                 <div class="topic">Phone</div>
-                <div class="text-one">+0098 9893 5647</div>
-                <div class="text-two">+0096 3434 5678</div>
+                <div class="text-one">+264 81 568 6675</div>
+                <div class="text-two">+264 81 464 7283</div>
               </div>
               <div class="email details">
                 <i class="fas fa-envelope"></i>
                 <div class="topic">Email</div>
-                <div class="text-one">codinglab@gmail.com</div>
-                <div class="text-two">info.codinglab@gmail.com</div>
+                <div class="text-one">enzotangi123@gmail.com</div>
+                <div class="text-two">enzo@myzone.com.na</div>
               </div>
             </div>
             <div class="right-side">
@@ -821,20 +731,7 @@
                 my tutorial, you can send me a message from here. It's my
                 pleasure to help you.
               </p>
-              <form action="#">
-                <div class="input-box">
-                  <input type="text" placeholder="Enter your name" />
-                </div>
-                <div class="input-box">
-                  <input type="text" placeholder="Enter your email" />
-                </div>
-                <div class="input-box message-box">
-                  <textarea placeholder="Enter your message"></textarea>
-                </div>
-                <div class="button">
-                  <input type="submit" value="Send Now" />
-                </div>
-              </form>
+              <button class="btn-primary" onclick="location.href='https://www.facebook.com/dkb.amuele/'">Click to check out my Facebook Page</button>
             </div>
           </div>
         </div>
